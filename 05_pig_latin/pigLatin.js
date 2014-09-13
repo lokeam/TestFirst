@@ -18,7 +18,7 @@ var translate = function(str){
     console.log(translated);
 	}
   // counts 'qu' as a consonant even when it's preceded by a consonant 
-  else if ( isVowel(firstChar) == false && secondChar == 'q' && thirChar == 'u') {
+  else if ( isVowel(firstChar) == false && secondChar == 'q' && thirdChar == 'u') {
     translated = str.slice(3) + str.slice(0, 3) + 'ay';
     console.log(translated);
   }
@@ -32,5 +32,5 @@ var translate = function(str){
 
 };
 
-translate('two');
+translate('square');
 
