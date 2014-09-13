@@ -29,8 +29,22 @@ var translate = function(str){
     translated = str.slice(2) + str.slice(0, 2) + 'ay';
     console.log(translated);
 	}
-
+  
+  // one consonant
+	else if ( isVowel(firstChar) == false ) {
+		console.log("ding");
+    translated = str.slice(1) + str.slice(0, 1) + 'ay';
+    console.log(translated);
+	}
+  
+  // vowel
+	else if ( isVowel(firstChar) == true ) {
+		console.log("ding");
+    translated = str + 'ay';
+    console.log(translated);
+	}  
+  
 };
 
-translate('square');
+translate('apple');
 
