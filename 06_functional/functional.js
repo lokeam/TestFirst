@@ -3,3 +3,16 @@ var countWords = function(str){
 	//return 'this is a sentence with ' + strArray.length + ' words';
 	return strArray.length;
 };
+
+var makeAdder = function(valueA){
+	return function(valueB) {
+		return valueA + valueB;
+	}
+};
+
+var forEach = function(arr,yourFunction){
+	for (var i = 0; i < arr.length; i++) {
+		yourFunction(arr[i]);
+	}
+};
+
