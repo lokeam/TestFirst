@@ -90,9 +90,7 @@ var stringAddition = function(arg){
 	for (var i = 0; i < arg.length; i++) {
 	    if (!isNaN(parseInt(arg[i]))) {  
           // Need to check if the next index is NOT a number then slice the string from the start of the index to the number
-          if (arg[i]){
-
-          }
+          arg.slice()
 
         count+= parseInt(arg[i]);
         
