@@ -90,7 +90,7 @@ var stringAddition = function(arg){
 	for (iIndex in arg) {
 	    if (!isNaN(parseInt(arg[iIndex]))) {
 	      console.log('dingding');  
-        count++;
+        count+= parseInt(arg[iIndex]);
         
 	    }
 	}
